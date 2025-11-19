@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Pet Dudiss</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header id="topo" class="topbar">
+    <div class="container">
+      <a class="logo" href="index.html">
+        <img src="imagens/favicon.jpg" alt="Logo Pet Dudis">
+        <span>Pet Dudis</span>
+      </a>
+
+      <nav class="menu">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#promocoes">Promoções</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1 class="hero__title">Cuidado e carinho para o seu pet</h1>
+      <p class="hero__subtitle">Banho, tosa, consultas e muito mais. Agende hoje mesmo!</p>
+      <a class="btn btn-primario" href="#contato">Agendar agora</a>
+    </div>
+  </section>
+
+  <main>
+    <section id="servicos" class="bloco">
+      <div class="container">
+        <h2 class="titulo-secao">Nossos serviços</h2>
+
+        <div class="grid-3">
+          <article class="card">
+            <img src="imagens/OIP.jpg" alt="Banho e Tosa">
+            <h3>Banho & Tosa</h3>
+            <p>Pacotes completos de higiene e beleza para seu amigão.</p>
+            <a class="btn btn-secundario" href="#contato">Quero saber mais</a>
+          </article>
+
+          <article class="card destaque">
+            <img src="imagens/cachorrinho.jpg" alt="Consulta Veterinária">
+            <h3>Consulta Veterinaria</h3>
+            <p>Profissionais preparados para acompanhar a saúde do seu pet.</p>
+            <a class="btn btn-secundario" href="#contato">Marcar consulta</a>
+          </article>
+
+          <article class="card">
+            <img src="imagens/aaa.jpg" alt="Cão passeando com guia">
+            <h3>Passeios</h3>
+            <p>Rotinas de caminhada personalizadas por energia e porte.</p>
+            <a class="btn btn-secundario" href="#contato">Quero passeios</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="promocoes" class="bloco bloco--cinza">
+      <div class="container">
+        <h2 class="titulo-secao">Promoções da semana</h2>
+
+        <div class="banner-promocao">
+          <p class="promocao">Banho e Tosa com 20% OFF somente até domingo!</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="bloco">
+      <div class="container">
+        <h2 class="titulo-secao">Parceiros</h2>
+
+        <ul class="logos" style="list-style: none;">
+          <li><img src="imagens/birbo.png" alt="Birbo"></li>
+          <li><img src="imagens/farmina.png" alt="Farmina"></li>
+          <li><img src="imagens/monelo.png" alt="Monelo"></li>
+          <li><img src="imagens/select.png" alt="Select"></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="depoimentos" class="bloco bloco--cinza">
+      <div class="container">
+        <h2 class="titulo-secao">O que dizem nossos clientes</h2>
+
+        <div class="grid-2">
+          <blockquote class="depoimento">
+            <p>“Meu cachorro saiu perfumado e feliz! Atendimento nota 10.”</p>
+            <footer>— Ana P.</footer>
+          </blockquote>
+
+          <blockquote class="depoimento">
+            <p>“Veterinária muito atenciosa, explicou tudo com calma.”</p>
+            <footer>— Marcos L.</footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="bloco">
+      <div class="container">
+        <h2 class="titulo-secao">Fale com a gente</h2>
+
+        <form id="form-contato" class="formulario" action="/enviar" method="post">
+          <div class="campo">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome completo">
+          </div>
+
+          <div class="campo">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="voce@exemplo.com" required>
+          </div>
+
+          <div class="campo">
+            <label for="servico">Serviço de interesse</label>
+            <select id="servico" name="servico">
+              <option value="">Selecione</option>
+              <option value="banho">Banho & Tosa</option>
+              <option value="consulta">Consulta Veterinária</option>
+              <option value="passeio">Passeios</option>
+            </select>
+          </div>
+
+          <div class="campo">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="4" placeholder="Como podemos ajudar?"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primario" style="padding: 12px 22px">Enviar</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container">
+      <div class="rodape__colunas">
+        <!-- Coluna 1: Sobre Nós -->
+           <div class="rodape__coluna">
+          <h4>Sobre Nós</h4>
+          <ul>
+            <li><a href="politica_de_privacidade.html">Política de Privacidade</a></li>
+            <li><a href="politica_de_compra.html">Política de Compra</a></li>
+            <li><a href="politica_de_entrega.html">Política de Entrega</a></li>
+          </ul>
+        </div>
+
+        <!-- Coluna 3: Minha Conta -->
+        <div class="rodape__coluna">
+          <h4>Minha Conta</h4>
+          <ul>
+            <li><a href="minha_conta.html">Minha Conta</a></li>
+            <li><a href="#">Histórico de Pedidos</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="rodape__info">
+        <p>Pet Dudis © 2025 - Todos os direitos reservados</p>
+        <nav>
+          <a href="#topo" class="link-rodape">Voltar ao topo</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
